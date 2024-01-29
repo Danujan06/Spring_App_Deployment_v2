@@ -11,10 +11,7 @@
 //@Configuration
 //public class MqttConfig {
 //
-//    String clientEndpoint = "a398am5o3vbqfl-ats.iot.ap-south-1.amazonaws.com";
-//    String clientId = "Test_client";
-//    String awsAccessKeyId ="AKIATY6FSZD75ZSEJRU3";
-//    String awsSecretAccessKey = "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";
+//
 //    AWSIotMqttClient client = null;
 //
 //    public String connectToIoT() throws AWSIotException, InterruptedException {
