@@ -16,6 +16,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+      - name: Set Environment Variables
+        run: |
+            echo "AWS_IOT_CLIENT_ENDPOINT=${{ secrets.AWS_IOT_CLIENT_ENDPOINT }}" >> $GITHUB_ENV
+            echo "AWS_IOT_CLIENT_ID=${{ secrets.AWS_IOT_CLIENT_ID }}" >> $GITHUB_ENV
+            echo "AWS_IOT_ACCESS_KEY_ID=${{ secrets.AWS_IOT_ACCESS_KEY_ID }}" >> $GITHUB_ENV
+            echo "AWS_IOT_SECRET_ACCESS_KEY=${{ secrets.AWS_IOT_SECRET_ACCESS_KEY }}" >> $GITHUB_ENV
       - name: Build Project
         run: mvn clean install -DskipTests
 
