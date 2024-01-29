@@ -41,9 +41,10 @@ public class MqttController {
     }
 
     // To disconnect from iot
+    // To disconnect from iot
     @PostMapping("/disconnect-iot")
     public String disconnectToIot() throws AWSIotException {
-        mqttConfig.disconncetFromIoT();
+        mqttConfig.disconnectFromIoT();
         return "Disconnected from IoT device successfully.";
     }
 //    @GetMapping("/select-plant")
