@@ -54,7 +54,7 @@ public class MyTopic extends AWSIotTopic {
                     System.out.println("The acidic liquid pump is OFF");
 
                     try {
-                        service.publishMessageToTopic(false,Topics.pHLowPumpBack); // To save the pump from air drying
+                        service.publishMessageToTopic(0.0,Topics.pHLowPumpBack); // To save the pump from air drying
                     } catch (AWSIotException | InterruptedException e) {
                         throw new RuntimeException(e);
                     }
