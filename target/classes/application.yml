@@ -16,9 +16,9 @@
 spring:
     datasource:
         #url: jdbc:mysql://userdetails.cxg6q8miqbo3.ap-south-1.rds.amazonaws.com:3306/userdetails
-        url: jdbc:mysql://localhost:3306/user_details
+        url: jdbc:mysql://userdetails.cvus8k4a4vcz.us-east-1.rds.amazonaws.com:3306/userdetails
         username: root
-        password: #springapplication
+        password: springapplication
         driver-class-name: com.mysql.cj.jdbc.Driver
     jpa:
         hibernate:
